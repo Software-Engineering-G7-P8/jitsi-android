@@ -1,0 +1,41 @@
+# File kiểm duyệt chức năng và tiến độ trước khi đưa vào hệ thống.
+# Người thực hiện: Phạm Văn Tuân
+ĐÁNH GIÁ PHÂN CHIA CÔNG VIỆC TRONG 2 TUẦN ĐẦU:
+
+
+----Thành viên----
+
+	+ Lê Minh Đức:
+
+	- Xác định được yêu cầu đề ra.
+	- Hoàn thành code đúng hạn.
+	- Code chạy thành công.
+	- Lỗi : Không sử dụng strings.xml => Đã khắc phục.
+	
+	ĐÁNH GIÁ: Hoàn thành
+	
+	+ Nguyễn Võ Khánh Duy:
+	
+	- Xác định được yêu cầu đề ra.
+	- Hoàn thành code đúng hạn.
+	- Code chạy thành công.
+	- Lỗi: Code dư nhiều => Đã khắc phục.
+	
+	ĐÁNH GIÁ: Hoàn thành
+
+	+ Trương Bùi Quốc Duy:
+	
+	- Xác định được yêu cầu đề ra.
+	- Hoàn thành code đúng hạn.
+	- Code chạy thành công.
+	- Lỗi: Tự viết không xài thư viện dẫn tới code quá dài => Đã khắc phục.
+
+	ĐÁNH GIÁ: Hoàn thành
+
+	+ Nguyễn Trung Tín:
+
+	- Xác định được yêu cầu đề ra.
+	- Code chạy thành công.
+	- Lỗi: Trễ hạn code 1 ngày.
+
+	ĐÁNH GIÁ: Hoàn thành
