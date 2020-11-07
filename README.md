@@ -3,9 +3,12 @@ Apply Agile process to build a mobile app streamming by Android. Use the WebRTC 
 # Video Meeting App
 ### In this project we will build a video meeting or conference application
 #### First of all, let's understand the idea of this application. To implement real-time activity like video meetings we must have some identity or destination link to the receiver. 
+
 ---
+
 For that, Users will sign up for their account using some basic details like the first name, last name, email, and password. To store all of the user data we will be using the cloud fire store database, which is a flexible and scalable database for mobile, web, and server development from Firebase and Google Cloud Platform.
 ![Firebase](https://miro.medium.com/max/1024/1*HFlYgB6gVLc4Su9HsB9MZg.png)
+
 ---
 After sign up, the user will sign in to their account using email and password. We will store logged user information into shared preferences to handle auto-sign in so users don't need to enter email and password every time.
 ![Cloud Firestore](https://i.stack.imgur.com/3iYP0.png)
