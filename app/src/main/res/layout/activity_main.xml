@@ -16,7 +16,6 @@
         android:paddingStart="@dimen/_8sdp"
         android:paddingEnd="@dimen/_8sdp"
         app:layout_constraintTop_toTopOf="parent">
-
         <TextView
             android:id="@+id/textTitle"
             android:layout_width="0dp"
@@ -25,9 +24,11 @@
             android:fontFamily="@font/ubuntu_bold"
             android:includeFontPadding="false"
             android:textColor="@color/colorTextIcons"
-            android:textSize="@dimen/_15ssp" />
-
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp" />
         <TextView
+            android:id="@+id/textSignOut"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:fontFamily="@font/ubuntu_bold"
@@ -40,13 +41,14 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/userRecyclerView"
+        android:id="@+id/usersRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        tools:ignore="MissingConstraints"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/layoutHeader"/>
-    
+        app:layout_constraintTop_toBottomOf="@id/layoutHeader"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="35dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

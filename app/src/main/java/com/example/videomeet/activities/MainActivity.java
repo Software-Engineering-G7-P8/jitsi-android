@@ -1,20 +1,28 @@
 package com.example.videomeet.activities;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.videomeet.R;
 import com.example.videomeet.utilities.Constants;
 import com.example.videomeet.utilities.PreferenceManager;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 
+import java.lang.reflect.Field;
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         preferenceManager = new PreferenceManager(getApplicationContext());
 
         TextView textTitle = findViewById(R.id.textTitle);
@@ -34,30 +41,25 @@ public class MainActivity extends AppCompatActivity {
                 preferenceManager.getString(Constants.KEY_FIRST_NAME),
                 preferenceManager.getString(Constants.KEY_LAST_NAME)
         ));
-
         findViewById(R.id.textSignOut).setOnClickListener(v -> signOut());
-
         FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(task -> {
-            if(task.isSuccessful() && task.getResult() != null){
+            if (task.isSuccessful() && task.getResult() != null){
                 sendFCMTokenToDatabase(task.getResult().getToken());
             }
         });
-
     }
-
-    private void sendFCMTokenToDatabase(String token) {
+    private void sendFCMTokenToDatabase(String token){
         FirebaseFirestore database = FirebaseFirestore.getInstance();
         DocumentReference documentReference =
                 database.collection(Constants.KEY_COLLECTION_USER).document(
                         preferenceManager.getString(Constants.KEY_USER_ID)
                 );
         documentReference.update(Constants.KEY_FCM_TOKEN, token)
-                .addOnSuccessListener(aVoid -> Toast.makeText(MainActivity.this, "token update successfully", Toast.LENGTH_SHORT).show())
-                .addOnFailureListener(e -> Toast.makeText(MainActivity.this, "Unable to send token: "+e.getMessage(), Toast.LENGTH_SHORT).show());
+                .addOnSuccessListener(aVoid -> Toast.makeText(MainActivity.this, "Token updated successfully", Toast.LENGTH_SHORT).show())
+                .addOnFailureListener(e -> Toast.makeText(MainActivity.this, "Unable to send token: " +e.getMessage(), Toast.LENGTH_SHORT).show());
     }
-
     private void signOut(){
-        Toast.makeText(this, "Sign Out...", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Signing out ... ",Toast.LENGTH_SHORT).show();
         FirebaseFirestore database = FirebaseFirestore.getInstance();
         DocumentReference documentReference =
                 database.collection(Constants.KEY_COLLECTION_USER).document(
@@ -71,6 +73,6 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(getApplicationContext(), SignInActivity.class));
                     finish();
                 })
-                .addOnFailureListener(e -> Toast.makeText(MainActivity.this, "Unable tosign out", Toast.LENGTH_SHORT).show());
+                .addOnFailureListener(e -> Toast.makeText(MainActivity.this, "Unable to sign out", Toast.LENGTH_SHORT).show());
     }
 }
