@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.videomeet"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -59,4 +59,7 @@ dependencies {
     // Firebase
     implementation 'com.google.firebase:firebase-messaging:17.3.4'
     implementation 'com.google.firebase:firebase-firestore:17.1.2'
+
+    //jitsi meet
+    implementation ('org.jitsi.react:jitsi-meet-sdk:2.8.2') { transitive = true }
 }
