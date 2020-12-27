@@ -89,36 +89,35 @@ Follow team by Trello: https://trello.com/b/P5FLtkjl/video-meeting
    ```
 ### Attributes
 + Sign In Screen.<br />
-![alt text](Image/Sign-In-Screen.jpg){:height="400px" width="200px"}
+<img src="https://github.com/Software-Engineering-G7-P8/jitsi-android/blob/main/Image/Sign-In-Screen.jpg" width="200" height="400" />
 + Sign Up Screen.<br />
-![alt text](Image/Sign-Up-Screen.jpg){:height="400px" width="200px"}
+<img src="https://github.com/Software-Engineering-G7-P8/jitsi-android/blob/main/Image/Sign-Up-Screen.jpg" width="200" height="400" />
 + List User Screen.<br />
-![alt text](Image/List-User-Screen.jpg){:height="400px" width="200px"}
+<img src="https://github.com/Software-Engineering-G7-P8/jitsi-android/blob/main/Image/List-User-Screen.jpg" width="200" height="400" />
 + Chat Screen.<br />
-![alt text](Image/Chat-Screen.jpg){:height="400px" width="200px"}
+<img src="https://github.com/Software-Engineering-G7-P8/jitsi-android/blob/main/Image/Chat-Screen.jpg" width="200" height="400" />
 + Sending Call Invitation.<br />
-![alt text](Image/Sending-Invitation(2).jpg){:height="400px" width="200px"}
+<img src="https://github.com/Software-Engineering-G7-P8/jitsi-android/blob/main/Image/Sending-Call-Invitation.jpg" width="200" height="400" />
 + Sending Video Invitation.<br />
-![alt text](Image/Sending-Invitation.jpg){:height="400px" width="200px"}
+<img src="https://github.com/Software-Engineering-G7-P8/jitsi-android/blob/main/Image/Sending-Video-Invitation.jpg" width="200" height="400" />
 + Video Meeting Screen.<br />
-![alt text](Image/Video-Meeting-Screen.jpg){:height="400px" width="200px"}
+<img src="https://github.com/Frankiient/GGclass/blob/master/Image/Video-Meeting-Screen.jpg" width="200" height="400" />
 + Option Video Meet.<br />
-![alt text](Image/Option.jpg){:height="400px" width="200px"}
+<img src="https://github.com/Frankiient/GGclass/blob/master/Image/Option.jpg" width="200" height="400" />
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation]
+_For more examples, please refer to the [Documentation](Documentation/INSTRUCTION.md)
 
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
+See the open issues for a list of proposed features (and known issues).
 
 
 <!-- CONTRIBUTING -->
