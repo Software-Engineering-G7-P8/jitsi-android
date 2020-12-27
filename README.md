@@ -89,21 +89,21 @@ Follow team by Trello: https://trello.com/b/P5FLtkjl/video-meeting
    ```
 ### Attributes
 + Sign In Screen.<br />
-![alt text](Image/Sign-In-Screen.jpg){:height="200" width="400"}
+![alt text](Image/Sign-In-Screen.jpg){:height="400px" width="200px"}
 + Sign Up Screen.<br />
-![alt text](Image/Sign-Up-Screen.jpg){:height="200" width="400"}
+![alt text](Image/Sign-Up-Screen.jpg){:height="400px" width="200px"}
 + List User Screen.<br />
-![alt text](Image/List-User-Screen.jpg){:height="200" width="400"}
+![alt text](Image/List-User-Screen.jpg){:height="400px" width="200px"}
 + Chat Screen.<br />
-![alt text](Image/Chat-Screen.jpg){:height="200" width="400"}
+![alt text](Image/Chat-Screen.jpg){:height="400px" width="200px"}
 + Sending Call Invitation.<br />
-![alt text](Image/Sending-Invitation(2).jpg){:height="200" width="400"}
+![alt text](Image/Sending-Invitation(2).jpg){:height="400px" width="200px"}
 + Sending Video Invitation.<br />
-![alt text](Image/Sending-Invitation.jpg){:height="200" width="400"}
+![alt text](Image/Sending-Invitation.jpg){:height="400px" width="200px"}
 + Video Meeting Screen.<br />
-![alt text](Image/Video-Meeting-Screen.jpg){:height="200" width="400"}
+![alt text](Image/Video-Meeting-Screen.jpg){:height="400px" width="200px"}
 + Option Video Meet.<br />
-![alt text](Image/Option.jpg){:height="200" width="400"}
+![alt text](Image/Option.jpg){:height="400px" width="200px"}
 
 <!-- USAGE EXAMPLES -->
 ## Usage
