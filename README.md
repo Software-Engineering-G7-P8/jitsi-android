@@ -10,6 +10,7 @@
       <ul>
         <li><a href="#main-functionalities">Main Functionalities</a></li>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#attributes">Attributes</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -86,6 +87,8 @@ Follow team by Trello: https://trello.com/b/P5FLtkjl/video-meeting
    ```sh
    https://developer.android.com/training/basics/firstapp/running-app
    ```
+### Attributes
+
 
 <!-- USAGE EXAMPLES -->
 ## Usage
