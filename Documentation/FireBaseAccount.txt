@@ -1,0 +1,9 @@
+This document is about Setup Firebase Cloud Messaging & Firestore.
+We set up Firebase Cloud messaging and Cloud Firestore Database 
+in our application using firebase.
+----
+Access website: https://firebase.google.com/
+---- 
+Login this account to see our database:
+Username: duclehuhu@gmail.com
+Password: Khongchobiet123
